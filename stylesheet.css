@@ -318,8 +318,7 @@ margin-top: 3rem;}
 .footerLogo {
     width: 70px;
     height: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
 }
 .popArt {
     grid-area: popArt;
@@ -683,6 +682,7 @@ margin-top: 3rem;}
             grid-template-areas:
                 'navbar'
                 'nested'
+                'footer'
         }
 
         /* MAKING ALL THE NESTED GRIDS FIT AND REMOVING MARGINS */
