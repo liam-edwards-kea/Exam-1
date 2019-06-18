@@ -571,8 +571,8 @@ padding-bottom: 20px;}
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.sprint3 {
-    grid-area: sprint3;
+.sprint4 {
+    grid-area: sprint4;
     margin-top: 5rem;
     width: 350px;
     height: 355px;
@@ -623,7 +623,7 @@ padding-bottom: 20px;}
         'sprint3 fourthTheme'
         'UX1 sprint'
         'UX2 sprint2'
-        'UX3 .';
+        'UX3 sprint4';
 }
 
 /* To add additional info on hover to avoid excess html pages */
