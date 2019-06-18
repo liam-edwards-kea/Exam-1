@@ -313,7 +313,7 @@ h2 {
 footer {grid-area: footer;
 background-color: #E8E8E8;
 max-width: 100%;
-margin-top: 3rem;
+margin-top: 5rem;
 padding-top: 20px;
 padding-bottom: 20px;}
 
@@ -565,7 +565,7 @@ padding-bottom: 20px;}
 
 .sprint2 {
     grid-area: sprint2;
-    margin-top: 15rem;
+    margin-top: 13rem;
     width: 350px;
     height: 337px;
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -573,7 +573,7 @@ padding-bottom: 20px;}
 
 .sprint4 {
     grid-area: sprint4;
-    margin-top: 5rem;
+    margin-top: 8rem;
     width: 350px;
     height: 355px;
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -598,7 +598,7 @@ padding-bottom: 20px;}
 
 .UX2 {
     grid-area: UX2;
-    margin-top: 18rem;
+    margin-top: 13rem;
     margin-right: 1.5rem;
     font-weight: 300;
     font-size: 3rem;
