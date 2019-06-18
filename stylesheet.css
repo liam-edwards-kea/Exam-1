@@ -614,6 +614,8 @@ padding-bottom: 20px;}
     text-align: right;
 }
 
+.UXfooter {margin-top: 11rem;}
+
 .nested6 {
     grid-area: nested;
     display: grid;
@@ -835,6 +837,18 @@ padding-bottom: 20px;}
         .etText {margin-top: 7rem;}
 
         .micrositeImg {margin-top: 3rem;}
+
+        .UXfooter {margin-top: 17rem;}
+
+        .sprint2 {margin-top: 3rem;}
+
+        .sprint4 {margin-top: 4rem;}
+
+        .UX2 {margin-top: 19rem;}
+
+        .UX3 {margin-top: 12rem;}
+
+
 
         .title,
         .img2,
