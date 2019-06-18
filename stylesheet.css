@@ -309,8 +309,14 @@ h2 {
 
 /* Nested Grids Basic Web */
 
-footer {grid-area: footer;}
+footer {grid-area: footer;
+background: #E8E8E8;
+max-width: 100%;}
 
+.footerLogo {
+    width: 70px;
+    height: 100px;
+}
 .popArt {
     grid-area: popArt;
     margin-top: 3rem;
