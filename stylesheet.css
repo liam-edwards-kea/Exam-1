@@ -157,6 +157,7 @@ h2 {
     grid-template-areas:
         'navbar navbar navbar'
         '. nested .'
+        'footer footer footer'
 }
 
 .title {
@@ -310,12 +311,15 @@ h2 {
 /* Nested Grids Basic Web */
 
 footer {grid-area: footer;
-background: #E8E8E8;
-max-width: 100%;}
+background-color: #E8E8E8;
+max-width: 100%;
+margin-top: 3rem;}
 
 .footerLogo {
     width: 70px;
     height: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .popArt {
     grid-area: popArt;
