@@ -309,6 +309,8 @@ h2 {
 
 /* Nested Grids Basic Web */
 
+footer {grid-area: footer;}
+
 .popArt {
     grid-area: popArt;
     margin-top: 3rem;
@@ -364,7 +366,8 @@ h2 {
         'title2 title2'
         'popArt firstTheme'
         'styles popArt2'
-        'web popArt3';
+        'web popArt3'
+        'footer footer';
 
 
 }
