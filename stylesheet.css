@@ -9,7 +9,7 @@ p {
     font-family: 'helvetica';
     color: white;
     font-size: 3rem;
-    width: 350px;
+    border-width: 300px;
     border: 10px solid white;
     border-style: double;
     padding: 50px;
@@ -912,7 +912,7 @@ footer {
 @media only screen and (max-width: 700) {
 
     .mainh1 {
-        display: hidden;
+        display: none;
     }
 }
 
@@ -920,11 +920,11 @@ footer {
 @media only screen and (max-width: 400px) {
     .wrapper1 {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 12fr 1fr;
         grid-template-areas:
-            'navbar'
-            'nested'
-            'footer';
+            '. navbar .'
+            '. nested .'
+            '. footer .';
     }
 
     .mainh1,
@@ -965,5 +965,6 @@ footer {
         font-weight: 400;
         margin-right: auto;
         margin-left: auto;
+
     }
 }
