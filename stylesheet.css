@@ -1,0 +1,905 @@
+h1,
+h2,
+p {
+    font-family: 'helvetica';
+}
+
+.mainh1,
+.mainh2 {
+    font-family: 'helvetica';
+    color: white;
+    font-size: 3rem;
+    width: 350px;
+    border: 10px solid white;
+    border-style: double;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+header,
+.ahref {
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.ahref:hover {
+    color: lightgray;
+    transform: scale(1.4);
+}
+
+.ahref2 {
+    text-decoration: none;
+    color: white;
+}
+
+.ahref:visited {
+    color: #000;
+}
+
+.water {
+    opacity: 0.8;
+    background-image: url(aaron-burden-1430581-unsplash.jpg);
+}
+
+hr {
+    border: 3px solid #6798b8;
+    border-radius: 3px;
+}
+
+/* NAV BAR FOR EVERY PAGE */
+
+.navbar {
+    grid-area: navbar;
+    background: linear-gradient(#6798b8, #6dd5ed);
+    overflow: hidden;
+    height: 78px;
+    border-radius: 10px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar ul {
+    margin: 8px 0 0 0;
+    list-style: none;
+    display: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a {
+    padding: 50px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 35px;
+    color: #ccc;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    color: #fff;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left 0.5s;
+    width: 100%;
+}
+
+/* WRAPPER GRIDS FOR INDEX PAGE */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'navbar navbar navbar';
+
+}
+
+.navbar {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+h1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+h2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+/* WRAPPER GRIDS FOR ABOUT ME PAGE */
+
+.wrapper1 {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-areas:
+        'navbar navbar navbar'
+        '. nested .'
+}
+
+.title {
+    font-size: 3.8rem;
+}
+
+/* grid areas for nested grid */
+
+.icons {
+    margin-top: 4rem;
+
+}
+
+.icons:hover {
+    transform: translate(0, 20px);
+    transition: 0.3s;
+    transition-delay: 0.15s;
+    cursor: pointer;
+}
+
+
+.title {
+    grid-area: title;
+}
+
+.aboutme {
+    grid-area: about;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5em;
+}
+
+.aboutme2 {
+    grid-area: about2;
+}
+
+.img1 {
+    grid-area: img1;
+    margin-left: 16rem;
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img2 {
+    grid-area: img2;
+    margin-top: 6rem;
+    margin-left: 3rem;
+    width: 350px;
+    height: 236px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nested {
+    grid-area: nested;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'title img2'
+        'about about'
+        'img1 about2';
+}
+
+/* PORTFOLIO PAGE */
+
+.portfolioTitle {
+    font-size: 3.8rem;
+}
+
+.title2 {
+    grid-area: title2;
+}
+
+.box1 h1,
+.box2 h1,
+.box3 h1,
+.box4 h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'helvetica';
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover {
+    transform: scale(1.05);
+    transition: .2s ease-in-out;
+    transition-delay: .1s;
+    cursor: pointer;
+}
+
+.box1 h1 a:hover,
+.box2 h1 a:hover,
+.box3 h1 a:hover,
+.box4 h1 a:hover {
+    transform: translate(150px, 0);
+    transition: 0.6s;
+    transition-delay: 0.5s;
+}
+
+.box1 {
+    grid-area: box1;
+    background: linear-gradient(#6798b8, #6dd5ed);
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box2 {
+    grid-area: box2;
+    background: linear-gradient(#6798b8, #6dd5ed);
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box3 {
+    grid-area: box3;
+    background: linear-gradient(#6798b8, #6dd5ed);
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box4 {
+    grid-area: box4;
+    background: linear-gradient(#6798b8, #6dd5ed);
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nested2 {
+    grid-area: nested;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    grid-template-areas:
+        'title2 title2'
+        'box1 box2'
+        'box3 box4';
+}
+
+/* Nested Grids Basic Web */
+
+.popArt {
+    grid-area: popArt;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 350px;
+    height: 270px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.popArt2 {
+    grid-area: popArt2;
+    margin-top: 6rem;
+    width: 350px;
+    height: 264px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.popArt3 {
+    grid-area: popArt3;
+    margin-top: 8rem;
+}
+
+.firstTheme {
+    grid-area: firstTheme;
+    margin-top: 5rem;
+    font-weight: lighter;
+    font-size: 1.7rem;
+}
+
+.styles {
+    grid-area: styles;
+    margin-top: 3rem;
+    margin-right: 1.5rem;
+    font-weight: lighter;
+    font-size: 3rem;
+    text-align: right;
+}
+
+.web {
+    grid-area: web;
+    margin-top: 4rem;
+    margin-right: 1.5rem;
+    font-weight: lighter;
+    font-size: 3rem;
+    text-align: right;
+}
+
+.nested3 {
+    grid-area: nested;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'title2 title2'
+        'popArt firstTheme'
+        'styles popArt2'
+        'web popArt3';
+
+
+}
+
+/* Basic Animation Page */
+
+.animation {
+    grid-area: animation;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 350px;
+    height: 197px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.patrick {
+    grid-area: patrick;
+    width: 300px;
+    height: 350px;
+    margin-top: 3rem;
+}
+
+.et {
+    grid-area: et;
+    margin-top: 5rem;
+    width: 350px;
+    height: 227px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.patrickText {
+    grid-area: patrickText;
+    margin-top: 6rem;
+    margin-right: 1.5rem;
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: right;
+}
+
+.secondTheme {
+    grid-area: secondTheme;
+    margin-top: 5rem;
+    font-weight: lighter;
+    font-size: 1.7rem;
+}
+
+.animation2 {
+    grid-area: animation2;
+    margin-top: 5rem;
+    width: 350px;
+    height: 197px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.animationText {
+    grid-area: animationText;
+    margin-top: 2.5rem;
+    margin-right: 1.5rem;
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: right;
+}
+
+.etText {
+    grid-area: etText;
+    margin-top: 3rem;
+    margin-right: 1.5rem;
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: right;
+
+}
+
+.nested4 {
+    grid-area: nested;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'title2 title2'
+        'animation secondTheme'
+        'patrickText patrick'
+        'animationText animation2'
+        'etText et';
+}
+
+/* Basic Content page */
+
+.contentImg {
+    grid-area: contentImg;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 350px;
+    height: 263px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.story {
+    grid-area: story;
+    margin-top: 5rem;
+    width: 350px;
+    height: 195px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.prototypeImg {
+    grid-area: prototypeImg;
+    margin-top: 3rem;
+    width: 350px;
+    height: 263px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.micrositeImg {
+    grid-area: micrositeImg;
+    margin-top: 6rem;
+    width: 350px;
+    height: 263px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.thirdTheme {
+    grid-area: thirdTheme;
+    margin-top: 5rem;
+    font-weight: lighter;
+    font-size: 1.7rem;
+}
+
+.content1 {
+    grid-area: content1;
+    margin-top: 2rem;
+    margin-right: 1.5rem;
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: right;
+}
+
+.content2 {
+    grid-area: content2;
+    margin-top: 2.5rem;
+    margin-right: 1.5rem;
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: right;
+}
+
+.content3 {
+    grid-area: content3;
+    margin-top: 2.5rem;
+    margin-right: 1.5rem;
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: right;
+}
+
+.nested5 {
+    grid-area: nested;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'title2 title2'
+        'contentImg thirdTheme'
+        'content1 story'
+        'content2 prototypeImg'
+        'content3 micrositeImg';
+}
+
+.sprint3 {
+    grid-area: sprint3;
+    margin-top: 4rem;
+    margin-left: 7rem;
+    width: 350px;
+    height: 197px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sprint {
+    grid-area: sprint;
+    margin-top: 3rem;
+    width: 350px;
+    height: 438px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sprint2 {
+    grid-area: sprint2;
+    margin-top: 15rem;
+    width: 350px;
+    height: 337px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fourthTheme {
+    grid-area: fourthTheme;
+    margin-top: 5rem;
+    font-weight: lighter;
+    font-size: 1.7rem;
+}
+
+.UX1 {
+    grid-area: UX1;
+    margin-top: 6rem;
+    margin-right: 1.5rem;
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: right;
+}
+
+.UX2 {
+    grid-area: UX2;
+    margin-top: 18rem;
+    margin-right: 1.5rem;
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: right;
+}
+
+.UX3 {
+    grid-area: UX3;
+    margin-top: 6rem;
+    margin-right: 1.5rem;
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: right;
+}
+
+.nested6 {
+    grid-area: nested;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'title2 title2'
+        'sprint3 fourthTheme'
+        'UX1 sprint'
+        'UX2 sprint2'
+        'UX3 .';
+}
+
+/* To add additional info on hover to avoid excess html pages */
+
+.textWithBlurredBg {
+    width: 350px;
+    height: 250px;
+    position: relative;
+}
+
+.textWithBlurredBg :not(img) {
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+    position: absolute;
+    top: 15%;
+    z-index: 1;
+    color: #fff;
+    text-align: left;
+    width: 100%;
+    opacity: 0;
+    transition: .3s;
+}
+
+.textWithBlurredBg:hover :not(img) {
+    opacity: 1;
+}
+
+.textWithBlurredBg:hover img {
+    filter: blur(2px) brightness(50%);
+    transition: .3s;
+}
+
+.textWithBlurredBg p {
+    font-family: 'helvetica';
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    background: linear-gradient(#6798b8, #6dd5ed);
+    padding: 0.5em 2em;
+    border-radius: 30px;
+    transition: .3s;
+    font-weight: 300;
+    font-size:18px;
+    text-align: center;}
+
+
+.btn:hover {
+    box-shadow:
+        1px 1px #9ba7ae,
+        2px 2px #9ba7ae,
+        3px 3px #9ba7ae;
+    transform: translateX(-3px);
+}
+
+    /* Media Queries for phone */
+
+    @media only screen and (max-width: 1000px) {
+        .wrapper1 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                'navbar'
+                'nested'
+        }
+
+        /* MAKING ALL THE NESTED GRIDS FIT AND REMOVING MARGINS */
+
+        /* THE ABOUT ME PAGE */
+
+        .nested {
+            grid-area: nested;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                'title'
+                'img2'
+                'about'
+                'img1'
+                'about2';
+        }
+
+
+
+        /* THE PORTFOLIO MAIN PAGE */
+        .nested2 {
+            grid-area: nested;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row-gap: 50px;
+            grid-template-areas:
+                'title2'
+                'box1'
+                'box2'
+                'box3'
+                'box4';
+        }
+
+        /* BASIC WEB PAGE */
+        .nested3 {
+            grid-area: nested;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                'title2'
+                'popArt'
+                'firstTheme'
+                'styles'
+                'popArt2'
+                'web'
+                'popArt3';
+        }
+
+        /* BASIC ANIMATION PAGE */
+
+        .nested4 {
+            grid-area: nested;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                'title2'
+                'animation'
+                'secondTheme'
+                'patrickText'
+                'patrick'
+                'animationText'
+                'animation2'
+                'etText'
+                'et';
+        }
+
+        /* BASIC CONTENT PAGE */
+
+        .nested5 {
+            grid-area: nested;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                'title2'
+                'contentImg'
+                'thirdTheme'
+                'content1'
+                'story'
+                'content2'
+                'prototypeImg'
+                'content3'
+                'micrositeImg';
+        }
+
+        /* BASIC UI/UX PAGE */
+
+        .nested6 {
+            grid-area: nested;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                'title2'
+                'sprint3'
+                'fourthTheme'
+                'UX1'
+                'sprint'
+                'UX2'
+                'sprint2'
+                'UX3';
+        }
+
+        /* ALLIGNING ALL TEXT IN THE CENTER */
+
+        .title2,
+        .firstTheme,
+        .styles,
+        .web,
+        .secondTheme,
+        .patrickText,
+        .animationText,
+        .etText,
+        .thirdTheme,
+        .content1,
+        .content2,
+        .content3,
+        .fourthTheme,
+        .UX1,
+        .UX2,
+        .UX3 {
+            text-align: center;
+            font-size: 1em;
+            font-weight: 400;
+        }
+
+        .web {
+            margin-top: 12rem;
+        }
+
+        .content3 {
+            margin-top: 7rem;
+        }
+
+        .et {
+            margin-top: 5rem;
+        }
+
+        .title,
+        .img2,
+        .about,
+        .img1,
+        .about2,
+        .popArt,
+        .popArt3,
+        .animation,
+        .patrick,
+        .animation2,
+        .et,
+        .contentImg,
+        .story,
+        .prototypeImg,
+        .micrositeImg,
+        .sprint,
+        .sprint2,
+        .sprint3 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .textWithBlurredBg {
+            margin-left: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* TAKING AWAY THE BLURRED BG TEXT */
+
+        .textWithBlurredBg p {
+            display: none;
+        }
+
+        .textWithBlurredBg:hover img {
+            filter: brightness(100%);
+        }
+    }
+
+    @media only screen and (max-width: 700) {
+
+        .mainh1 {
+            display: hidden;
+        }
+    }
+
+
+    @media only screen and (max-width: 400px) {
+        .wrapper1 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                'navbar'
+                'nested';
+        }
+
+
+        .navbar,
+        .title2,
+        .popArt,
+        .firstTheme,
+        .styles,
+        .popArt2,
+        .web,
+        .popArt3,
+        .animation,
+        .secondTheme,
+        .patrickText,
+        .patrick,
+        .animationText,
+        .animation2,
+        .projectPoolText,
+        .etText,
+        .et,
+        .contentImg,
+        .thirdTheme,
+        .content1,
+        .story,
+        .content2,
+        .prototypeImg,
+        .content3,
+        .micrositeImg,
+        .sprint,
+        .sprint2,
+        .sprint3,
+        .fourthTheme,
+        .UX1,
+        .UX2,
+        .UX3 {
+            text-align: center;
+            font-size: 1em;
+            font-weight: 400;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
