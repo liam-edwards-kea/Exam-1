@@ -310,12 +310,14 @@ h2 {
 
 /* Nested Grids Basic Web */
 
-footer {grid-area: footer;
-background-color: #E8E8E8;
-max-width: 100%;
-margin-top: 5rem;
-padding-top: 20px;
-padding-bottom: 20px;}
+footer {
+    grid-area: footer;
+    background-color: #E8E8E8;
+    max-width: 100%;
+    margin-top: 5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 .footerLogo {
     width: 50px;
@@ -324,6 +326,7 @@ padding-bottom: 20px;}
     margin-right: auto;
     display: block;
 }
+
 .popArt {
     grid-area: popArt;
     margin-top: 3rem;
@@ -614,7 +617,9 @@ padding-bottom: 20px;}
     text-align: right;
 }
 
-.UXfooter {margin-top: 11rem;}
+.UXfooter {
+    margin-top: 11rem;
+}
 
 .nested6 {
     grid-area: nested;
@@ -675,8 +680,9 @@ padding-bottom: 20px;}
     border-radius: 30px;
     transition: .3s;
     font-weight: 300;
-    font-size:18px;
-    text-align: center;}
+    font-size: 18px;
+    text-align: center;
+}
 
 
 .btn:hover {
@@ -687,262 +693,277 @@ padding-bottom: 20px;}
     transform: translateX(-3px);
 }
 
-    /* Media Queries for phone */
+/* Media Queries for phone */
 
-    @media only screen and (max-width: 1000px) {
-        .wrapper1 {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-areas:
-                'navbar'
-                'nested'
-                'footer'
-        }
-
-        /* MAKING ALL THE NESTED GRIDS FIT AND REMOVING MARGINS */
-
-        /* THE ABOUT ME PAGE */
-
-        .nested {
-            grid-area: nested;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-areas:
-                'title'
-                'img2'
-                'about'
-                'img1'
-                'about2';
-        }
-
-
-
-        /* THE PORTFOLIO MAIN PAGE */
-        .nested2 {
-            grid-area: nested;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-row-gap: 50px;
-            grid-template-areas:
-                'title2'
-                'box1'
-                'box2'
-                'box3'
-                'box4';
-        }
-
-        /* BASIC WEB PAGE */
-        .nested3 {
-            grid-area: nested;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-areas:
-                'title2'
-                'popArt'
-                'firstTheme'
-                'styles'
-                'popArt2'
-                'web'
-                'popArt3';
-        }
-
-        /* BASIC ANIMATION PAGE */
-
-        .nested4 {
-            grid-area: nested;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-areas:
-                'title2'
-                'animation'
-                'secondTheme'
-                'patrickText'
-                'patrick'
-                'animationText'
-                'animation2'
-                'etText'
-                'et';
-        }
-
-        /* BASIC CONTENT PAGE */
-
-        .nested5 {
-            grid-area: nested;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-areas:
-                'title2'
-                'contentImg'
-                'thirdTheme'
-                'content1'
-                'story'
-                'content2'
-                'prototypeImg'
-                'content3'
-                'micrositeImg';
-        }
-
-        /* BASIC UI/UX PAGE */
-
-        .nested6 {
-            grid-area: nested;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-areas:
-                'title2'
-                'sprint3'
-                'fourthTheme'
-                'UX1'
-                'sprint'
-                'UX2'
-                'sprint2'
-                'UX3';
-        }
-
-        /* ALLIGNING ALL TEXT IN THE CENTER */
-
-        .title2,
-        .firstTheme,
-        .styles,
-        .web,
-        .secondTheme,
-        .patrickText,
-        .animationText,
-        .etText,
-        .thirdTheme,
-        .content1,
-        .content2,
-        .content3,
-        .fourthTheme,
-        .UX1,
-        .UX2,
-        .UX3 {
-            text-align: center;
-            font-size: 1em;
-            font-weight: 400;
-        }
-
-        .web {
-            margin-top: 12rem;
-        }
-
-        .content3 {
-            margin-top: 7rem;
-        }
-
-        .et {
-            margin-top: 5rem;
-        }
-
-        .etText {margin-top: 7rem;}
-
-        .micrositeImg {margin-top: 3rem;}
-
-        .UXfooter {margin-top: 17rem;}
-
-        .sprint2 {margin-top: 3rem;}
-
-        .sprint4 {margin-top: 4rem;}
-
-        .UX2 {margin-top: 19rem;}
-
-        .UX3 {margin-top: 12rem;}
-
-
-
-        .title,
-        .img2,
-        .about,
-        .img1,
-        .about2,
-        .popArt,
-        .popArt3,
-        .animation,
-        .patrick,
-        .animation2,
-        .et,
-        .contentImg,
-        .story,
-        .prototypeImg,
-        .micrositeImg,
-        .sprint,
-        .sprint2,
-        .sprint3 {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .textWithBlurredBg {
-            margin-left: 0;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* TAKING AWAY THE BLURRED BG TEXT */
-
-        .textWithBlurredBg p {
-            display: none;
-        }
-
-        .textWithBlurredBg:hover img {
-            filter: brightness(100%);
-        }
+@media only screen and (max-width: 1000px) {
+    .wrapper1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'navbar'
+            'nested'
+            'footer'
     }
 
-    @media only screen and (max-width: 700) {
+    /* MAKING ALL THE NESTED GRIDS FIT AND REMOVING MARGINS */
 
-        .mainh1 {
-            display: hidden;
-        }
+    /* THE ABOUT ME PAGE */
+
+    .nested {
+        grid-area: nested;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'title'
+            'img2'
+            'about'
+            'img1'
+            'about2';
     }
 
 
-    @media only screen and (max-width: 400px) {
-        .wrapper1 {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-areas:
-                'navbar'
-                'nested';
-        }
 
-
-        .navbar,
-        .title2,
-        .popArt,
-        .firstTheme,
-        .styles,
-        .popArt2,
-        .web,
-        .popArt3,
-        .animation,
-        .secondTheme,
-        .patrickText,
-        .patrick,
-        .animationText,
-        .animation2,
-        .projectPoolText,
-        .etText,
-        .et,
-        .contentImg,
-        .thirdTheme,
-        .content1,
-        .story,
-        .content2,
-        .prototypeImg,
-        .content3,
-        .micrositeImg,
-        .sprint,
-        .sprint2,
-        .sprint3,
-        .fourthTheme,
-        .UX1,
-        .UX2,
-        .UX3 {
-            text-align: center;
-            font-size: 1em;
-            font-weight: 400;
-            margin-right: auto;
-            margin-left: auto;
-        }
+    /* THE PORTFOLIO MAIN PAGE */
+    .nested2 {
+        grid-area: nested;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 50px;
+        grid-template-areas:
+            'title2'
+            'box1'
+            'box2'
+            'box3'
+            'box4';
     }
+
+    /* BASIC WEB PAGE */
+    .nested3 {
+        grid-area: nested;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'title2'
+            'popArt'
+            'firstTheme'
+            'styles'
+            'popArt2'
+            'web'
+            'popArt3';
+    }
+
+    /* BASIC ANIMATION PAGE */
+
+    .nested4 {
+        grid-area: nested;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'title2'
+            'animation'
+            'secondTheme'
+            'patrickText'
+            'patrick'
+            'animationText'
+            'animation2'
+            'etText'
+            'et';
+    }
+
+    /* BASIC CONTENT PAGE */
+
+    .nested5 {
+        grid-area: nested;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'title2'
+            'contentImg'
+            'thirdTheme'
+            'content1'
+            'story'
+            'content2'
+            'prototypeImg'
+            'content3'
+            'micrositeImg';
+    }
+
+    /* BASIC UI/UX PAGE */
+
+    .nested6 {
+        grid-area: nested;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'title2'
+            'sprint3'
+            'fourthTheme'
+            'UX1'
+            'sprint'
+            'UX2'
+            'sprint2'
+            'UX3';
+    }
+
+    /* ALLIGNING ALL TEXT IN THE CENTER */
+
+    .title2,
+    .firstTheme,
+    .styles,
+    .web,
+    .secondTheme,
+    .patrickText,
+    .animationText,
+    .etText,
+    .thirdTheme,
+    .content1,
+    .content2,
+    .content3,
+    .fourthTheme,
+    .UX1,
+    .UX2,
+    .UX3 {
+        text-align: center;
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .web {
+        margin-top: 12rem;
+    }
+
+    .content3 {
+        margin-top: 7rem;
+    }
+
+    .et {
+        margin-top: 5rem;
+    }
+
+    .etText {
+        margin-top: 7rem;
+    }
+
+    .micrositeImg {
+        margin-top: 3rem;
+    }
+
+    .UXfooter {
+        margin-top: 17rem;
+    }
+
+    .sprint2 {
+        margin-top: 3rem;
+    }
+
+    .sprint4 {
+        margin-top: 4rem;
+    }
+
+    .UX2 {
+        margin-top: 19rem;
+    }
+
+    .UX3 {
+        margin-top: 12rem;
+    }
+
+
+
+    .title,
+    .img2,
+    .about,
+    .img1,
+    .about2,
+    .popArt,
+    .popArt3,
+    .animation,
+    .patrick,
+    .animation2,
+    .et,
+    .contentImg,
+    .story,
+    .prototypeImg,
+    .micrositeImg,
+    .sprint,
+    .sprint2,
+    .sprint3 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .textWithBlurredBg {
+        margin-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* TAKING AWAY THE BLURRED BG TEXT */
+
+    .textWithBlurredBg p {
+        display: none;
+    }
+
+    .textWithBlurredBg:hover img {
+        filter: brightness(100%);
+    }
+}
+
+@media only screen and (max-width: 700) {
+
+    .mainh1 {
+        display: hidden;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .wrapper1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'navbar'
+            'nested'
+            'footer';
+    }
+
+    .mainh1,
+    .title2,
+    .popArt,
+    .firstTheme,
+    .styles,
+    .popArt2,
+    .web,
+    .popArt3,
+    .animation,
+    .secondTheme,
+    .patrickText,
+    .patrick,
+    .animationText,
+    .animation2,
+    .projectPoolText,
+    .etText,
+    .et,
+    .contentImg,
+    .thirdTheme,
+    .content1,
+    .story,
+    .content2,
+    .prototypeImg,
+    .content3,
+    .micrositeImg,
+    .sprint,
+    .sprint2,
+    .sprint3,
+    .sprint4,
+    .fourthTheme,
+    .UX1,
+    .UX2,
+    .UX3 {
+        text-align: center;
+        font-size: 1em;
+        font-weight: 400;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
