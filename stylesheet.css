@@ -571,6 +571,15 @@ padding-bottom: 20px;}
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.sprint3 {
+    grid-area: sprint3;
+    margin-top: 5rem;
+    width: 350px;
+    height: 355px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
 .fourthTheme {
     grid-area: fourthTheme;
     margin-top: 5rem;
